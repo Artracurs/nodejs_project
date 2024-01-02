@@ -5,6 +5,15 @@ type Props = {}
 
 export default function Slave({}: Props) {
   return (
-    <div className={s.container}>Slave</div>
+    <div className={s.container}>
+      Slave
+      <div className={s.value}>
+      <h1>1200</h1>
+    </div>
+    <div className={s.buttonBlock}>
+      <button>DONE</button>
+      <button>CLEAR</button>
+    </div>
+    </div>
   )
 }

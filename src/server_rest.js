@@ -10,12 +10,13 @@
 // app.listen(PORT, () => {
 //     console.log(`Server has beed running on http://${HOST}:${PORT}`);
 // });
+
 require('dotenv').config();
 
 const express =require('express');
 const app = express();
-const PORT = process.env.PORT;
-const HOST = process.env.HOST;
+const PORT = process.env.REST_PORT;
+const HOST = process.env.REST_HOST;
 
 
 app.get('/', (req, res) => {

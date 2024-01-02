@@ -6,16 +6,30 @@ type Props = {}
 export default function Keyboard({}: Props) {
   return (
     <div className={s.container}>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div>0</div>
+        <div className={s.empty}>
+        </div>
+        <div className={s.bottom}>
+            <div className={s.block}>
+                <div className={s.el}>1</div>
+                <div className={s.el}>4</div>
+                <div className={s.el}>7</div>
+            </div>
+            <div className={s.block}>
+                <div className={s.el}>2</div>
+                <div className={s.el}>5</div>
+                <div className={s.el}>8</div>
+            </div>
+            <div className={s.block}>
+                <div className={s.el}>3</div>
+                <div className={s.el}>6</div>
+                <div className={s.el}>9</div>
+            </div>
+            <div className={s.block}>
+                <div className={s.el}></div>
+                <div className={s.el}></div>
+                <div className={s.el}>0</div>
+            </div>
+        </div>
     </div>
   )
 }

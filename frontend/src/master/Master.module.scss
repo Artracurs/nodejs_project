@@ -7,4 +7,25 @@
     margin: 5px;
     height: 500px;
     width: 300px;
+    border-radius: 20px;
+    .value {
+        display: flex;
+        h4 {
+            padding: 15px;
+        }
+    }
+    h1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    };
+    .buttonBlock {
+        display: flex;
+        flex-direction: column;
+        button {
+            flex: 1;
+            margin: 0 10px 10px 10px;
+            border-radius: 35px;
+        }
+    }
 }

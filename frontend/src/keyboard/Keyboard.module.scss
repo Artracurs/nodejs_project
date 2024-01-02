@@ -1,12 +1,30 @@
 .container {
-    display: grid;
-    div {
+    position: relative;
+    min-height: 530px;
+    .el {
+        min-width: 60px;
+        min-height: 60px;
+        margin: 0 10px 10px 0;
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
         border: 1px solid gray;
-        max-width: 60px;
-        max-height: 60px;
-        margin: 5px;
+        border-radius: 15px;
     };
     div:hover {
-        cursor: pointer;
+        // cursor: pointer;
+    }
+    .el:active {
+        background-color: #9797972c;
+    }
+    .block {
+        display: inline-block;
+    };
+    .empty {
+        height: 40px;
+    };
+    .bottom {
+        min-height: auto;
     }
 }
