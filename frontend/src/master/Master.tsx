@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import s from './Master.module.scss';
+import Keyboard from '../keyboard/Keyboard';
 
 type Props = {}
 
 export default function Master({}: Props) {
   return (
-    <div>Master</div>
+    <div className={s.container}>Master
+      <Keyboard />
+    </div>
   )
 }
