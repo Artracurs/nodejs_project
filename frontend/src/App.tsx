@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Master from './master/Master'
 import Slave from './slave/Slave'
+import WebSocketClient from './master/WebSocketClient'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Master />
-      <Slave />
+      {/* <Master /> */}
+      {/* <Slave /> */}
+      <WebSocketClient />
     </>
   )
 }
