@@ -16,7 +16,7 @@
 //         // Event listener for when a message is received
 //         client.onmessage = (message) => {
 //             console.log(message.data);
-            
+
 //             setMessages(prevMessages => [...prevMessages, message.data]);
 //         };
 
@@ -67,7 +67,7 @@ function WebSocketClient() {
 
     const message = useSelector((state) => state.counter.value)
     const dispatch = useDispatch();
-  
+
     useEffect(() => {
         // Initialize WebSocket
         const client = new WebSocket('ws://192.168.43.216:3001');
@@ -80,6 +80,7 @@ function WebSocketClient() {
         // Event listener for when a message is received
         client.onmessage = (message) => {
             console.log(message.data);
+            dispatch(incrementAsync(1))
             setMessages(prevMessages => [message.data]);
         };
 
