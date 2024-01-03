@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      {/* <Master /> */}
-      {/* <Slave /> */}
+      <Master />
+      <Slave />
       <WebSocketClient />
     </>
   )

@@ -1,5 +1,6 @@
 const WebSocket = require('ws');
 const server = new WebSocket.Server({host:'192.168.43.216', port: 3001 });
+const wss = new WebSocket.Server({ server });
 
 server.on('connection', (ws) => {
     console.log('Client connected');
@@ -23,5 +24,7 @@ server.on('connection', (ws) => {
         console.log('Client disconnected');
     });
 });
+
+
 
 console.log('WebSocket server started on ws://localhost:3001');
