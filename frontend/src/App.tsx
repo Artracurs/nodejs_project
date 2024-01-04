@@ -4,16 +4,20 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Master from './master/Master'
 import Slave from './slave/Slave'
-import WebSocketClient from './master/WebSocketClient'
+import WebSocketClient from './WebSocketClient'
+import Slavezus from './Zus/Slavezus'
+import Masterzus from './Zus/Masterzus'
+import WebZus from './master/WebSocketClient'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Master />
-      <Slave />
-      <WebSocketClient />
+      {/* <Master /> */}
+      {/* <Slave /> */}
+      {/* <WebSocketClient /> */}
     </>
   )
 }

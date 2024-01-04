@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-const socket = new WebSocket('ws://your-websocket-server');
+const socket = new WebSocket('wss://192.168.43.216:8081');
 
 
 interface CounterState {

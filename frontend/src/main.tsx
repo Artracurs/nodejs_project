@@ -7,6 +7,8 @@ import { Provider } from 'react-redux'
 import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-dom'
 import Master from './master/Master.tsx'
 import Slave from './slave/Slave.tsx'
+import Masterzus from './Zus/Masterzus.tsx'
+import Slavezus from './Zus/Slavezus.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,11 +17,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/master',
-    element: <Master />
+    element: <Masterzus />
   },
   {
     path: '/slave',
-    element: <Slave />
+    element: <Slavezus />
   }
   // Add more routes here as needed
 ]);

@@ -29,8 +29,12 @@
 
 
 const WebSocket = require('ws');
+require('dotenv').config();
 
-const wss = new WebSocket.Server({host:'192.168.43.216', port: 3001 });
+const PORT = process.env.WS_PORT
+const HOST = process.env.WS_HOST
+
+const wss = new WebSocket.Server({host: HOST, port: PORT });
 
 wss.on('connection', function connection(ws) {
   console.log('Соединение установлено');
